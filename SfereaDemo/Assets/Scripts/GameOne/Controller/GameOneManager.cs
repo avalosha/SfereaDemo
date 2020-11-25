@@ -106,7 +106,7 @@ public class GameOneManager : MonoBehaviour
                 state = true;
                 if (CompareLists())
                 {
-                    print("Good");
+                    //print("Good");
                     score += 10 * states[index].Count;
                     if (updateScore != null) { updateScore(score); }
                     selectedButtons.Clear();
@@ -121,7 +121,7 @@ public class GameOneManager : MonoBehaviour
                 }
                 else
                 {
-                    print("Bad");
+                    //print("Bad");
                     if (gameOneOver != null) { gameOneOver(); }
                 }
             }

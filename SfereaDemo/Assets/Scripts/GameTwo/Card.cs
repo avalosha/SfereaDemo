@@ -22,6 +22,12 @@ public class Card : MonoBehaviour
     public int numberCard;
     public int numberImage;
 
+    private bool running;
+    public bool Running{
+        set{running = value;}
+        get{return running;}
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,17 +36,12 @@ public class Card : MonoBehaviour
         animation = this.GetComponent<Animation>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void DisableButton(){
         button.interactable = false;
     }
 
     public void TurnCard() {
+        if(!running){return;}
         if (!face) {
             face=true;
             animation.Play("turnCard");
@@ -49,15 +50,20 @@ public class Card : MonoBehaviour
             }
         } else {
             face = false;
-            image.sprite = sourceImage;
-            print("Oculta carta");
             animation.Play("turnOffCard");
+        }
+    }
+
+    public void HideCard() {
+        if(!face){
+            //print("Oculta carta");
+            image.sprite = sourceImage;
         }
     }
 
     public void ShowCard() {
         if (face){
-            print("Muestra carta");
+            //print("Muestra carta");
             image.sprite = sprite;
         }
     }

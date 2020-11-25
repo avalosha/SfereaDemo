@@ -46,4 +46,10 @@ public class LoginViewController : MonoBehaviour
             warningText.SetActive(true);
         }
     }
+
+    public void SkipCheckData() {
+        anim.Play("CloseLogin");
+        if (warningText.activeSelf) warningText.SetActive(false);
+        menuCanvas.SetActive(true);
+    }
 }

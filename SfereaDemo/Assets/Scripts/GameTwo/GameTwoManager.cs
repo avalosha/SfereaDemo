@@ -1,23 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class GameTwoManager : MonoBehaviour
 {
+    public delegate void GameTwoManagerDelegate(int num);
+    public static event GameTwoManagerDelegate updateScore;
+    public static event GameTwoManagerDelegate updateTime;
+
+    public delegate void GameTwoOver();
+    public static event GameTwoOver gameTwoOver;
+
     public Card[] cards;
     public Sprite[] sprites;
 
     public List<int> reversedCards;
     private int score;
     private int pars;
-
-    public GameObject gameOverView;
-    public Animation animation;
-
-    public Text scoreText;
-    public Text timeText;
 
     private float duration;
     private float timer;
@@ -40,23 +39,30 @@ public class GameTwoManager : MonoBehaviour
         {
             timer = 0f;
             seconds++;
-            timeText.text = seconds.ToString() + " :Tiempo";
+            if (updateTime != null) { updateTime(seconds); }
         }
     }
 
     void OnEnable() {
         Card.card += SetCards;
-        if (!running) { running = true;}
+        GameTwoViewController.startGameTwo += StartGame;
     }
 
     void OnDisable() {
         Card.card -= SetCards;
+        GameTwoViewController.startGameTwo -= StartGame;
+    }
+
+    private void StartGame() {
+        running = true;
+        DeactivateCards(true);
     }
 
     private void SetCards(int number) {
         if (reversedCards.Count < 2) {
             reversedCards.Add(number);
             if(reversedCards.Count == 2) {
+                DeactivateCards(false);
                 StartCoroutine(ShowStates());
             }
         }
@@ -70,33 +76,33 @@ public class GameTwoManager : MonoBehaviour
 
     private void CheckCards() {
         if (cards[reversedCards[0]].numberImage == cards[reversedCards[1]].numberImage){
-            print("Good");
+            //print("Good");
             cards[reversedCards[0]].DisableButton();
             cards[reversedCards[1]].DisableButton();
             score += 10;
-            scoreText.text = "Puntuación: " + score.ToString();
+            if (updateScore != null) { updateScore(score); }
             pars++;
             if (pars == 7) {
                 running = false;
-                GameOver();
+                if (gameTwoOver != null) { gameTwoOver(); }
+            } else {
+                DeactivateCards(true);
             }
-            print("Score: "+score);
+            //print("Score: "+score);
         } else {
-            print("Bad");
+            //print("Bad");
+            DeactivateCards(true);
             cards[reversedCards[0]].TurnCard();
             cards[reversedCards[1]].TurnCard();
         }
         reversedCards.Clear();
     }
 
-    private void GameOver() {
-        gameOverView.SetActive(true);
-        animation.Play("OpenLogin");
-    }
-
-    public void ReturnMenu(){
-        animation.Play("CloseLogin");
-        SceneManager.LoadSceneAsync(0);
+    private void DeactivateCards(bool state) {
+        for (int i = 0; i < 14; i++)
+        {
+            cards[i].Running = state;
+        }
     }
 
 }

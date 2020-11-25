@@ -25,7 +25,7 @@ public class UserDataManager : MonoBehaviour
             Debug.LogWarning(www.error);
         } else
         {
-            Debug.Log(www.downloadHandler.text);
+            //Debug.Log(www.downloadHandler.text);
             SetSave(www.downloadHandler.text);
         }
     }

@@ -401,8 +401,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 689173402}
-        m_TargetAssemblyTypeName: GameTwoManager, Assembly-CSharp
+      - m_Target: {fileID: 1734953763}
+        m_TargetAssemblyTypeName: GameTwoViewController, Assembly-CSharp
         m_MethodName: ReturnMenu
         m_Mode: 1
         m_Arguments:
@@ -587,7 +587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: -1816089199294943461, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 7
   numberImage: 5
 --- !u!111 &485202980
@@ -753,7 +753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 7290590127709815387, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 12
   numberImage: 6
 --- !u!111 &593012645
@@ -919,7 +919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: -2985376900133497765, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 5
   numberImage: 1
 --- !u!111 &685464593
@@ -1085,7 +1085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: -5128932570251115353, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 4
   numberImage: 4
 --- !u!111 &686513647
@@ -1251,10 +1251,6 @@ MonoBehaviour:
   - {fileID: -1816089199294943461, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
   - {fileID: 7290590127709815387, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
   reversedCards: 0000000000000000
-  gameOverView: {fileID: 828878664}
-  animation: {fileID: 828878665}
-  scoreText: {fileID: 1351825387}
-  timeText: {fileID: 1900770898}
 --- !u!4 &689173403
 Transform:
   m_ObjectHideFlags: 0
@@ -1417,7 +1413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 3528828026954637004, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 13
   numberImage: 2
 --- !u!111 &881730505
@@ -1583,7 +1579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: -1816089199294943461, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 9
   numberImage: 5
 --- !u!111 &985797732
@@ -1749,7 +1745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: -2898892972858532416, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 3
   numberImage: 3
 --- !u!111 &1009270052
@@ -1994,7 +1990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: -2985376900133497765, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 1
   numberImage: 1
 --- !u!111 &1093680382
@@ -2160,7 +2156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: -2898892972858532416, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 8
   numberImage: 3
 --- !u!111 &1117523800
@@ -2462,7 +2458,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1320851956
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2480,7 +2476,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 40}
+  m_AnchoredPosition: {x: 0, y: 50}
   m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1320851957
@@ -2525,7 +2521,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1320851958}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1734953763}
+        m_TargetAssemblyTypeName: GameTwoViewController, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1320851958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2696,7 +2704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: -5128932570251115353, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 10
   numberImage: 4
 --- !u!111 &1397545198
@@ -2862,7 +2870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: -3422227721096765191, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 6
   numberImage: 0
 --- !u!111 &1497169828
@@ -3009,7 +3017,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 327718267}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 46.666656, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -240, y: 229.00003}
@@ -3028,7 +3036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: -3422227721096765191, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 0
   numberImage: 0
 --- !u!111 &1517009735
@@ -3232,6 +3240,7 @@ GameObject:
   - component: {fileID: 1734953761}
   - component: {fileID: 1734953760}
   - component: {fileID: 1734953759}
+  - component: {fileID: 1734953763}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3319,6 +3328,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1734953763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734953758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f853adb171a4f498bb0077fcb25a6e76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverView: {fileID: 828878664}
+  animation: {fileID: 828878665}
+  scoreText: {fileID: 1351825387}
+  timeText: {fileID: 1900770898}
+  startButton: {fileID: 1320851955}
 --- !u!1 &1767727764
 GameObject:
   m_ObjectHideFlags: 0
@@ -3372,7 +3398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 7290590127709815387, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 11
   numberImage: 6
 --- !u!111 &1767727767
@@ -3634,7 +3660,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0 :Time
+  m_Text: 0 :Tiempo
 --- !u!222 &1900770899
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3696,7 +3722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 3528828026954637004, guid: b71db0bc42451439e9c49cd8aaaedc34, type: 3}
-  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  sourceImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   numberCard: 2
   numberImage: 2
 --- !u!111 &2075452447
